@@ -7,8 +7,8 @@ import VueMarkdown from 'vue-markdown-render'
     <v-app-bar app color="primary" dark>
       <v-toolbar-title>AI Market Research</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn text>Home</v-btn>
-      <v-btn text>About</v-btn>
+      <v-btn>Home</v-btn>
+      <v-btn>About</v-btn>
     </v-app-bar>
 
     <!-- Main content with a hero section -->
