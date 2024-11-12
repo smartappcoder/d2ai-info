@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Todos from './components/Todos.vue'
+import Reports from './components/Reports.vue'
 </script>
 
 <template>
   <main>
-    <Todos />
+    <Reports />
   </main>
 </template>
 

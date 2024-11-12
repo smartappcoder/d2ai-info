@@ -4,6 +4,16 @@ import App from "./App.vue";
 import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
 
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+import { createVuetify } from 'vuetify'
+import 'vuetify/styles';  // Global CSS has to be imported
+
 Amplify.configure(outputs);
 
-createApp(App).mount("#app");
+const vuetify = createVuetify({ 
+    components, 
+    directives 
+})
+
+createApp(App).use(vuetify).mount("#app")
