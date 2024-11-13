@@ -21,7 +21,7 @@ import VueMarkdown from 'vue-markdown-render'
                 <h1 class="display-1">Medical IoT for diabetes</h1>
               </v-row>
               <v-row style="border: 1px solid #000; height: 200px; overflow: auto;">
-                <v-col>
+                <v-col class="ml-4 mr-4">
                 <vue-markdown class="mt-4" :source="`## Executive Summary
 
 The integration of the Internet of Things (IoT) into healthcare has revolutionized the management of chronic diseases, particularly diabetes. This executive summary provides a concise overview of the report, highlighting key findings, market trends, and strategic recommendations in the realm of medical IoT for diabetes management.
