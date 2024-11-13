@@ -1,10 +1,16 @@
-## AWS Amplify Vue.js Starter Template
+## AI created Market Research Reports 
 
-This repository provides a starter template for creating applications using Vue.js and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
+This repository provides the home application for the collections of the AI Market Research Reports using Vue.js and AWS Amplify.
+
+## Associated Domain Name - www.d2ai.info
+
+The application is associated to the domain name d2ai.info already.
+A new commit to the **main** branch will be automatically deployed.
 
 ## Overview
 
-This template equips you with a foundational Vue application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
+### AWS Amplify Vue.js Vuetify
+This application is a Vue (Vue 3) application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
 
 ## Features
 
