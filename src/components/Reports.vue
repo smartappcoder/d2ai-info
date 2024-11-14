@@ -1,5 +1,22 @@
 <script setup lang="ts">
-import VueMarkdown from 'vue-markdown-render'
+  import VueMarkdown from 'vue-markdown-render'
+  import { downloadData } from 'aws-amplify/storage';
+  const downloadClick = () => {
+      console.log('downloadClick')
+      try {
+        const result = downloadData({
+          path: "album/2024/1.jpg",
+          /*
+          options: {
+            // Specify a target bucket using name assigned in Amplify Backend
+            bucket: "d2aiInfoStorage"
+          }
+          */
+        }).result;
+      } catch (error) {
+        console.log(`Error: ${error}`)
+      }
+  };
 </script>
 <template>
   <v-app>
@@ -64,7 +81,7 @@ In conclusion, the integration of IoT technology into diabetes management presen
                 </v-col>
               </v-row>
               <v-row class="mt-6" align="center" justify="center">
-                <v-btn color="primary" large>Download</v-btn>
+                <v-btn color="primary" large @click="downloadClick">Download</v-btn>
               </v-row>
             </v-card>
           </v-col>
@@ -78,11 +95,12 @@ In conclusion, the integration of IoT technology into diabetes management presen
     </v-footer>
   </v-app>
 </template>
-
+<script setup lang="ts">
+</script>
 <script lang="ts">
-export default {
-  name: 'Reports',
-};
+  export default {
+    name: 'Reports'
+  };
 </script>
 
 <style>
