@@ -5,13 +5,13 @@
       console.log('downloadClick')
       try {
         const result = downloadData({
-          path: "album/2024/1.jpg",
-          /*
+          path: "reports/test.pdf",
+          
           options: {
             // Specify a target bucket using name assigned in Amplify Backend
             bucket: "d2aiInfoStorage"
           }
-          */
+          
         }).result;
       } catch (error) {
         console.log(`Error: ${error}`)
