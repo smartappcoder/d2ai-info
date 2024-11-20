@@ -4,7 +4,7 @@ import Reports from './components/Reports.vue'
 
 <template>
   <main>
-    <Reports />
+    <Reports style="background: transparent;"/>
   </main>
 </template>
 

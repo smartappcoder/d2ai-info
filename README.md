@@ -9,6 +9,11 @@ A new commit to the **main** branch will be automatically deployed.
 
 ## Overview
 
+### App Architecture
+The application queries all of the market research reports available (stored in the backend cloud storage, AWS S3), and lists them as **Card** UI components.
+Each Card component includes the report title, an abstract, and a **Button** to allow the download of the full report in PDF.
+
+
 ### AWS Amplify Vue.js Vuetify
 This application is a Vue (Vue 3) application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
 
