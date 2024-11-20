@@ -33,7 +33,8 @@
                 let report: Report = {
                   name: '',
                   abstract: '',
-                  pdf: ''
+                  pdf: '',
+                  title: ''
                 } 
                 report.name = reportFileName
                 const result = await downloadData({
